@@ -1,0 +1,127 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ul_wrapper {
+    background-color: thistle;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+	width: 960px;
+	margin: 30px auto;
+	padding: 20px;
+}
+
+header .container,
+footer .container {
+    margin: 0 auto;
+}
+
+footer .container{
+	background-color: #5F5F5F !important;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#logo_img {
+    width: 10%;
+    float: left;
+}
+
+#logo_text {
+    color: green;
+    font-size: 40px;
+	margin: 0 15%;
+	text-align: left !important;
+    text-shadow: rgb(153, 199, 122) 1px -1px;
+}
+
+nav {
+	margin-left: 0 auto;
+	vertical-align: top;
+	text-align: right;
+}
+
+nav a {
+    color: white;
+    margin-left: 2vw;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color ease-in-out 0.2s;
+}
+
+nav a:hover {
+    color: greenyellow;
+}
+
+p, span, a, li {
+    color: rgb(75, 74, 74);
+    text-shadow: rgb(153, 199, 122) 1px -1px 2px;
+    transition: color .2s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+p:hover, a:hover, span:hover {
+    color: goldenrod;
+}
+
+form.form_wrapper {
+    background-color: blanchedalmond;
+    padding: 5px;
+    outline: hsl(189, 83%, 47%) 2px solid;
+    box-shadow: rgb(195, 0, 255) 0 0 10px;
+}
+
+table.tbl_class {
+    display: inline-block;
+    border: rgb(0, 255, 200) 2px solid;
+    border-collapse: collapse;
+    box-shadow: gold 0 0 10px;
+    align-items: center;
+    background-color: khaki;
+}
+
+.table_title {
+    font-weight: bold;
+}
+
+.table-wrapper {
+    background-color: rgb(252, 189, 196);
+    margin-bottom: 3%;
+}
+
+tr:nth-child(even) {
+    background-color: wheat;
+}
+
+th, td {
+    border: 1px black solid;
+    font-weight: normal;
+}
+
+footer {
+    margin-top: 5%;
+    padding: 3px;
+    background-color: lightgray;
+    box-shadow: rgb(245, 114, 66) 0 0 5px 3px;
+}
