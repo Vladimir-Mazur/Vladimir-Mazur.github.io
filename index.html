@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUBGU</title>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>KUBSU</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img alt="LOGO" id="logo_img" src="icon.png">
+        <p id="logo_text">Буква Ю</p>
+        <nav>
+            <a href="">ССЫЛКА 1</a>
+            <a href="">ССЫЛКА 2</a>
+            <a href="">ССЫЛКА 3</a>
+        </nav>
+    </header>
+    <br>
     <div class="wrapper">
         <div class="form">
             <ul>
@@ -33,7 +43,7 @@
                 <li><a href="../1.html">Относ на ../ НЕ РАБ (у меня нет такого файла)</a></li>
                 <li><a href="../../1.html">Относ на ../../ НЕ РАБ (у меня нет такого файла)</a></li>
                 <li>
-                    <p><a href="#">ссылка</a> в тексте абзаца</p>
+                    <p class="br_text"><a href="#">ссылка</a> в тексте абзаца</p>
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/questions/99315/would-it-be-useful-to-change-java-to-support-both-static-and-dynamic-types"> фрагмент страницы </a>
@@ -80,6 +90,43 @@
                 </li>
                 <li><a href="ftp://user:vovamazur2004@gmail.com/Temp/file.txt">FTP</a></li>
                 </ul>
+
+                <div class="table-wrapper">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td id="table_title" colspan="4">ТАБЛИЦА</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 1</td>
+                            <td>ячейка 2</td>
+                            <td>ячейка 3</td>
+                            <td>ячейка 4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">ячейка 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">ячейка 6</td>
+                            <td colspan="2">ячейка 7</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 8</td>
+                            <td>ячейка 9</td>
+                            <td>ячейка 10</td>
+                            <td>ячейка 11</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">ячейка 12</td>
+                            <td>ячейка 13</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 14</td>
+                            <td colspan="3">ячейка 15</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
 
                 <form action="/index.html">
                 <label>
@@ -148,5 +195,8 @@
             </ul>
         </div>
     </div>
+<footer>
+    © Мазур Владимир
+</footer>
 </body>
 </html>
