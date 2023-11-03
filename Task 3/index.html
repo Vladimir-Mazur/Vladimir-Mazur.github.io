@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>KUBSU</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img alt="LOGO" id="logo_img" src="icon.png">
+            <p id="logo_text">Буква Ю</p>
+        </div>
+    </header>
+    <nav>
+        <a href="">ССЫЛКА 1</a>
+        <a href="">ССЫЛКА 2</a>
+        <a href="">ССЫЛКА 3</a>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="form">
+            <ul class="ul_wrapper">
+                <li><a href="http://kubsu.ru/">КубГУ</a></li>
+                <li><a id="httpsKub" href="https://kubsu.ru/">КубГУ</a></li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/HTTP">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/5b/HTTP_logo.svg"
+                        alt="http"
+                        style="width: 200px"
+                    />
+                    </a>
+                </li>
+                <li><a href="demo.html">Демо</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#httpsKub">На КубГу (фрагмент)</a></li>
+                <li>
+                    <a href="http://example.com?product=775&ver=676&hl=ua">Параметры</a>
+                </li>
+                <li><a href="http://example.com?id=228">Id</a></li>
+                <li><a href="./image.jpg">Относ</a></li>
+                <li><a href="./about/1.html">Относ на about</a></li>
+                <li><a href="../1.html">Относ на ../ НЕ РАБ (у меня нет такого файла)</a></li>
+                <li><a href="../../1.html">Относ на ../../ НЕ РАБ (у меня нет такого файла)</a></li>
+                <li>
+                    <p class="br_text"><a href="#">ссылка</a> в тексте абзаца</p>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/questions/99315/would-it-be-useful-to-change-java-to-support-both-static-and-dynamic-types"> фрагмент страницы </a>
+                </li>
+                <li>
+                    <img
+                    src="image.jpg"
+                    alt="ЦветочеГ"
+                    usemap="#image-map"
+                    style="width: 300px"
+                    />
+                    <map name="image-map">
+                    <area
+                        shape="rect"
+                        alt="alt"
+                        coords="0,0,100,100"
+                        href="http://example.com?product=8976"
+                    />
+                    <area
+                        shape="circle"
+                        alt="alt1"
+                        coords="150,150,50"
+                        href="http://example.com?id=9885"
+                    />
+                    </map>
+                </li>
+                <li><a href="">0 хреф</a></li>
+                <li><a>без хреф</a></li>
+                <li>
+                    <a href="#" rel="nofollow">
+                    Ссылка, по которой запрещен переход поисковикам</a
+                    >
+                </li>
+                <li>
+                    <noindex><a href="#">Поисковик не увидит</a></noindex>
+                </li>
+                <li>
+                    <ol>
+                    <li><a href="#">Наруто</a></li>
+                    <li><a href="#">Фиксики</a></li>
+                    <li><a href="#">Бананы</a></li>
+                    <li><a href="#">Пределы</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://user:vovamazur2004@gmail.com/Temp/file.txt">FTP</a></li>
+                </ul>
+
+                <div class="table-wrapper">
+                    <table class="tbl_class">
+                        <tbody>
+                        <tr>
+                            <td id="table_title" colspan="4">ТАБЛИЦА</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 1</td>
+                            <td>ячейка 2</td>
+                            <td>ячейка 3</td>
+                            <td>ячейка 4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">ячейка 5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">ячейка 6</td>
+                            <td colspan="2">ячейка 7</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 8</td>
+                            <td>ячейка 9</td>
+                            <td>ячейка 10</td>
+                            <td>ячейка 11</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">ячейка 12</td>
+                            <td>ячейка 13</td>
+                        </tr>
+                        <tr>
+                            <td>ячейка 14</td>
+                            <td colspan="3">ячейка 15</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <form class="form_wrapper" action="/index.html">
+                    <label>
+                        ФИО:<br />
+                        <input value="Мансур Марат Ибрамович" /> <br />
+                    </label>
+
+                    <label>
+                        Телефон:<br />
+                        <input value="89604773026" /> <br />
+                    </label>
+
+                    <label>
+                        Почта:<br />
+                        <input type="email" placeholder="E-Mail" />
+                        <br />
+                    </label>
+
+                    <label>
+                        Дата:<br />
+                        <input value="2023-08-11" type="date" />
+                        <br />
+                    </label>
+
+                    Пол:<br />
+                    <label>
+                        <input
+                        type="radio"
+                        checked="checked"
+                        name="radio-group-1"
+                        value="М"
+                        />М
+                    </label>
+                    
+                    <label><input type="radio" name="radio-group-1" value="Ж" />Ж</label>
+                    <br />
+                    <label>
+                        Любимый язык программирования:
+                        <br />
+                        <select name="language" multiple="multiple">
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="JS">JS</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Haskel">Haskel</option>
+                        <option value="Clojure">Clojure</option>
+                        <option value="Prolog">Prolog</option>
+                        <option value="Scala">Scala</option>
+                        </select>
+                        <br />
+                    </label>
+
+                    <label>
+                        Биография <br />
+                        <textarea name="dad">биография</textarea>
+                    </label>
+
+                    Чекбокс:<br />
+                    <label
+                        ><input type="checkbox" name="check-1" /> с доками ознакомлен<br />
+                    </label>
+                    <input type="submit" value="Сохранить" />
+                </form>
+            </ul>
+        </div>
+    </div>
+<footer>
+    © Мазур Владимир
+</footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.label {
+    display: block;
+    margin-top: 5px;
+}
+
+.inline {
+    display: inline;
+}
+
+#options {
+    display: block;
+    margin-top: 5px;
+}
+
+#check {
+    display: block;
+    margin-top: 5px;
+}

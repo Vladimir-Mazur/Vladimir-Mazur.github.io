@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<title>Task 6</title>
+	</head>
+	<body>
+		<form>
+			<div class="label">
+				<label><input type="radio" name="good" value="12000" id="good1">New Balance 1080 Fresh Foam X</label>
+				<label><input type="radio" name="good" value="10000" id="good2">New Balance 1080</label>
+				<label><input type="radio" name="good" value="13500" id="good3">Jordan Air Jordan 1 Low</label>
+			</div><br>
+			<label id="options" class="invisible">Выберите цвет: 
+				<select id="option">
+					<option value="0">Черные</option>
+					<option value="4000">Серые</option>
+				</select>
+			</label><br>
+			<label class="label">Количество: <input type="number" id="number" value="1"></label><br>
+			<label id="check" class="invisible"><input type="checkbox" id="checked">Ортопидическая стелька</label><br>
+			<span class="label">Сумма заказа: <span  class="inline" id="sum"></span></span>
+		</form>
+		<script src="form.js"></script>
+	</body>
+</html>
