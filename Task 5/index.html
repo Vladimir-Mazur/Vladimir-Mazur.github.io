@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		
+		<meta charset="UTF-8">
+		<title>Mazur Shop</title>
+	</head>
+	<body>
+		<form>
+			<label>Товар: 
+				<select id="shoes">
+					<option value="1" data-price="22000">Salomon XT-6</option>
+					<option value="2" data-price="24000">Asics Gel Kayano 14</option>
+					<option value="3" data-price="17000">New Balance Joe Freshgoods Performance</option>
+					<option value="4" data-price="5300">Nike Humara LX Jacquemus</option>
+					<option value="5" data-price="23000">New Balance 550</option>
+					<option value="6" data-price="17000">Nike Air Force 1 Low SP Ambush</option>
+					<option value="7" data-price="14000">Nike WMNS Air Jordan 1 Mid</option>
+					<option value="8" data-price="14500">New Balance 530</option>
+					<option value="9" data-price="31500">Nike Dunk Low Retro</option>
+					<option value="10" data-price="13000">A Bathing Ape Bape Sta JJJJound</option>
+				</select>
+			</label><br>
+			<label>Количество: 
+				<input type="number" id="number">
+			</label><br>
+			<span>Сумма заказа: </span>
+			<span id="sum"></span><br>
+			<input type="submit" id="get_shoes" value="Вывести сумму">
+		</form>
+		<script src="form.js"></script>
+	</body>
+</html>

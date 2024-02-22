@@ -7,20 +7,25 @@
 }
 
 .label {
-    display: block;
     margin-top: 5px;
+    display: block;
 }
 
 .inline {
     display: inline;
 }
 
-#options {
-    display: block;
+#check {
     margin-top: 5px;
+    display: block;
 }
 
-#check {
+#options {
     display: block;
-    margin-top: 5px;
+}
+
+.goods {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px 0px;
 }

@@ -1,10 +1,10 @@
 /*jslint browser: true */
 window.onload = function () {
 	
-	function price(good, option) {
+	function price(shoes, option) {
 		let virgin_count = document.getElementById("number").value
 		let count = parseInt(virgin_count)
-		let price = parseInt(good.getAttribute("value"))
+		let price = parseInt(shoes.getAttribute("value"))
 		let optionValue = parseInt(option.value)
 		let price_sum = document.getElementById("sum")
 		let out = (price + optionValue) * count
@@ -22,9 +22,9 @@ window.onload = function () {
 	  
 			
 
-	let good1 = document.getElementById("good1")
-	let good2 = document.getElementById("good2")
-	let good3 = document.getElementById("good3")
+	let shoes1 = document.getElementById("shoes1")
+	let shoes2 = document.getElementById("shoes2")
+	let shoes3 = document.getElementById("shoes3")
 	let options = document.getElementById("options")
 	let check = document.getElementById("check")
 	let checked = document.getElementById("checked")
@@ -33,42 +33,55 @@ window.onload = function () {
 	let flag = 0
 	
 
-	good1.addEventListener("click", function () {
+	shoes1.addEventListener("click", function () {
 		options.className = "invisible"
 		check.className = "invisible"
 		option.value = "0"
 		checked.checked = false
 		flag = 1
-		price(good1, option)
+		price(shoes1, option)
 	})
-	good2.addEventListener("click", function () {
+	shoes2.addEventListener("click", function () {
 		options.className = "visible"
 		check.className = "invisible"
 		checked.checked = false
 		flag = 2
-		price(good2, option)
+		price(shoes2, option)
 	})
-	good3.addEventListener("click", function () {
+	shoes3.addEventListener("click", function () {
 		options.className = "invisible"
 		check.className = "visible"
 		option.value = "0"
 		checked.checked = false
 		flag = 3
-		price(good3, option)
+		price(shoes3, option)
+	})
+	shoes4.addEventListener("click", function () {
+		options.className = "invisible"
+		check.className = "visible"
+		option.value = "0"
+		checked.checked = false
+		flag = 4
+		price(shoes4, option)
 	})
 	options.addEventListener("change", function () {
-		price(good2, option)
+		price(shoes2, option)
 	})
 	checked.addEventListener("click", function () {
-		price(good3, option)
+		price(shoes3, option)
+	})
+	options.addEventListener("click", function () {
+		price(shoes4, option)
 	})
 	count.addEventListener("input", function () {
 		if (flag == 1) {
-			price(good1, option)
+			price(shoes1, option)
 		} else if (flag == 2) {
-			price(good2, option)
+			price(shoes2, option)
 		} else if (flag == 3) {
-			price(good3, option)
+			price(shoes3, option)
+		} else if (flag == 4) {
+			price(shoes4, option)
 		}
 	})
 }
